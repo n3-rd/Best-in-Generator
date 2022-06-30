@@ -21,8 +21,9 @@ let generateMeme = ()=> {
         .then(res => res.json())
         .then(data => {
             imageContainer.src = data.data.url;
-            downloadImage.src = data.data.url;
+            downloadImage.href = data.data.url;
             loader.style.display = 'none';
+
         })
     }
     
