@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best In Generator</title>
+    <link rel="stylesheet" href="/index.e9a92ad8.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/index.9345d665.js"></script>
 </head>
 <body>
 
@@ -19,7 +21,7 @@
           <span class="ml-3 text-xl">Best-in Generator</span>
         </a>
         <nav class=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap text-base justify-center">
-        <a class="mr-5 hover:text-gray-900">Github</a>
+        <a class="mr-5 hover:text-gray-900" href="#">Github</a>
           
         </nav>
         
@@ -33,19 +35,20 @@
         </h2>
 
         <div class="text-input flex justify-center align-center py-12">
-            <input type="text" class="border-2 px-6 py-4 border-gray-300 rounded w-2/4 font-bold" name="caption" id="caption">
+            <input type="text" class="border-2 px-6 py-4 border-gray-300 rounded w-2/4 font-bold" name="caption" id="image-caption">
             <button class="bg-neutral-900  hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded" id="generate">
                 Generate
             </button>
         </div>
 
 
-        <div class="image px-6" id="image">
-            <img src="/img/6ldll3.jpg" width="100%" alt="">
+        <div class="image px-6 flex justify-center align-center">
+            <h5 class="text-center font-bold loader text-lg py-2">Calm down comrade, e dey load 🕺</h5>
+            <img src="/img/6ldll3.jpg" class="w-full lg:w-fit" id="image" alt="">
         </div>
 
         <div class="download-button flex justify-center align-center py-6">
-            <a href="/img/6ldll3.jpg" download="">
+            <a href="/img/6ldll3.jpg" id="download-image" download="">
                 <button class="bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded w-full">
                     Download
                 </button>
