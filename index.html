@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d57d5">
+<meta name="msapplication-TileColor" content="#2d57d5">
+<meta name="theme-color" content="#2d57d5">
+<meta name="description" content="Generate your 'Best in' Meme">
     <title>Best In Generator</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/js/index.js" ></script>
+    <script src="/js/index.js"></script>
 </head>
+
 <body>
 
-     
+
     <header class="text-gray-600 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img src="img\header-image.png" width="10%">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span class="ml-3 text-xl">Best-in Generator</span>
-        </a>
-        <nav class=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap text-base justify-center">
-        <a class="mr-5 hover:text-gray-900" href="https://github.com/n3-rd/Best-in-Generator">Github</a>
-          
-        </nav>
-        
-      </div>
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="img\header-image.png" width="10%">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Best-in Generator</span>
+            </a>
+
+
+        </div>
     </header>
-     
+
 
     <div class="main-container my-24">
         <h2 class="text-4xl text-center font-black leading-relaxed">
@@ -35,29 +42,48 @@
         </h2>
 
         <div class="text-input flex justify-center align-center py-12">
-            <input type="text" class="border-2 px-6 py-4 border-gray-300 rounded w-2/4 font-bold" name="caption" id="image-caption">
+            <input type="text" class="border-2 px-6 py-4 border-gray-300 rounded w-2/4 font-bold" name="caption"
+                id="image-caption">
             <button class="bg-neutral-900  hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded" id="generate">
                 Generate
             </button>
         </div>
 
 
+        <div class="my-4">
+            <h5 class="text-center font-bold loader text-lg py-2">Calm down comrade, e dey load 🕺</h5> <br>
+
+        </div>
+
         <div class="image px-6 flex justify-center align-center">
-            <h5 class="text-center font-bold loader text-lg py-2">Calm down comrade, e dey load 🕺</h5>
             <img src="img\6ldll3.jpg" class="w-full lg:w-fit" id="image" alt="">
         </div>
 
         <div class="download-button flex justify-center align-center py-6">
-            <a href="img\6ldll3.jpg" id="download-image" download>
-                <button class="bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded w-full">
-                    Download
-                </button>
-            </a>
+            <!-- <a href="img\6ldll3.jpg" id="download-image"> -->
+            <button class="bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded w-fit"
+                id="download">
+                Download
+            </button>
+            <!-- </a> -->
         </div>
 
-           
-       
+
+        <div class="bottom-text">
+            <p class="text-center text-gray-600">
+                Made with ❤️ by comrade <a href="https://twitter.com/n3-rd"
+                    class="text-indigo-800 font-bold hover:text-gray-900">@n3-rd</a>
+            </p>
+            <div class="text-center py-6">
+                <a class="mr-5 hover:text-gray-900 font-bold" href="https://github.com/n3-rd/Best-in-Generator">Github
+                    Repo</a>
+
+            </div>
+
+        </div>
+
     </div>
-    
+
 </body>
+
 </html>
